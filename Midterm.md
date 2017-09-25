@@ -122,7 +122,7 @@ Spark นั้นทำงานบน Hadoop clusters ซึ่งทำงา
   sudo docker run --hostname=quickstart.cloudera --privileged=true -t -i -p 8888:8888 cloudera/quickstart /usr/bin/docker-quickstart
   ```
 
-  ## คำสั่ง SerDe อะไรซักอย่าง กูก๊อปมาใส่ก่อน 5555
+  ## คำสั่ง SerDe สำหรับใช้ RegEx
   ``` SQL
   CREATE EXTERNAL TABLE weblogTest(host STRING, time STRING, method STRING, object STRING, size STRING )ROW FORMAT SERDE 'org.apache.hadoop.hive.contrib.serde2.RegexSerDe' WITH SERDEPROPERTIES ("input.regex" = "([^\\s]+) - - \\[(.+)\\] \"([^\\s]+) (/[^\\s]*) HTTP/[^\\s]+\" [^\\s]+ ([0-9]+)") STORED AS TextFile LOCATION "/user/cloudera/weblog"
   ```
