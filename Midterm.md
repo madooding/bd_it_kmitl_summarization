@@ -87,3 +87,4 @@ Spark นั้นทำงานบน Hadoop clusters ซึ่งทำงา
 
 ## Processing Techniques
 
+![Processing Techiques](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/images/processing-techniques.png)
