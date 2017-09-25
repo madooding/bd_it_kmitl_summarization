@@ -25,3 +25,43 @@
 
 ![Hadoop Environment](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/images/hadoop-environment.png)
 
+## HBase คืออะไร ?
+
+HBase เป็น open source software ตัวนึง ซึ่งเป็น distributed database modeled หลังจากมี Google's BigTable ซึ่งก็ถูกเขียนขึ้นโดยใช้ภาษา Java ถูกพัฒนาให้เป็นส่วนนึงของ Hadoop project นั่นแหล่ะ และรันอยู่บน HDFS อีกทีนึง (ทำงานเหมือนกันกับ BigTable)
+
+## HBase features
+- Column oriented AKA hadoop database
+- สนับสนุนการทำงานแบบ realtime CRUD ด้วย (ซึ่งต่างจาก HDFS)
+- ไม่มี SQL Database
+- Opensource
+- Run on a cluster.
+
+## ใช้ HBase ตอนไหน ?
+- ก็เมื่อมีปริมาณของข้อมูลที่จะเอามาเก็บเยอะมาก
+- ข้อมูลที่ไม่มีโครงสร้าง (รูปภาพ, เสียง)
+- ข้อมูลหรอมแหรม
+- ข้อมูลที่เป็นคอลัมน์ๆ
+- เมื่อต้องการความยืดหยุ่นสูง
+
+## Data Processing Technology ตัวไหนบ้างที่ใช้ Hadoop
+
+- MapReduce
+- Hive
+- Pig
+- Impala
+- Drill
+- Spark
+
+## อะไรคือ MapReduce วะ (อ่านมาตั้งนาน เพิ่งจะมาสงสัย)
+
+**MapReduce** นั้นคือรูปแบบการเขียนโปรแกรมอย่างนึงนั่นแหล่ะ มีไว้สำหรับประมวลผลและสร้างเดต้าเซ็ทขนาดใหญ่ด้วยการทำงานแบบ  Parallel algorithm แบบกระจายตัวบนคลัสเตอร์
+
+MapReduce นั้นประกอบไปด้วยเมธอด Map() และ Reduce() ซึ่งรันบน Batch mode
+
+## Hive คืออะไร ?
+
+**Hive** พัฒนาขึ้นโดย Facebook ออกแบบมาเพื่อให้ง่ายต่อการสรุปข้อมูล การดึงข้อมูลแบบชั่วคราวและวิเคราะห์ข้อมูลที่มีปริมาณมากๆ
+
+ซึ่งมันก็มีภาษาสำหรับ query ง่ายๆที่เรียกว่า **HiveQL** ซึ่งพื้นฐานก็มาจาก SQL นั่นแหล่ะ
+
+มันไม่ได้ถูกออกแบบมาเพื่อจัดการกับ Transaction แบบออนไลน์นะแจ๊ะ แล้วก็ไม่แนะนำให้นำมา query ข้อมูลแบบ real-time ด้วย
