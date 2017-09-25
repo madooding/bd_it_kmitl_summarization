@@ -22,3 +22,5 @@
 2. ชั้นของการเก็บข้อมูล (Filesystem) เรียกว่า HDFS Provides storage
 
 3. ชั้นของ Server cloud เป็น hardware ที่ใช้ run hadoop นั่นเอง
+
+![Hadoop Environment](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/images/hadoop-environment.png)
