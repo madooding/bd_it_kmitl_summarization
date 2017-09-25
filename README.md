@@ -12,3 +12,6 @@
 ## Resources
 - [คำสั่ง HBase](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/HBaseCommands.pdf)
 - [Simple Steps](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/SimpleSteps.pdf)
+
+## Summarization
+- [Midterm](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/Midterm.md)
