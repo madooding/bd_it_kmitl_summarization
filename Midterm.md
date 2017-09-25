@@ -88,3 +88,30 @@ Spark นั้นทำงานบน Hadoop clusters ซึ่งทำงา
 ## Processing Techniques
 
 ![Processing Techiques](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/images/processing-techniques.png)
+
+## Yarn คืออะไร ?
+> คำตอบ : Cluster Resource Management
+
+## HDFS
+- เป็นหน่วยเก็บข้อมูลสำหรับ Hadoop cluster
+- ถูกออกแบบให้จัดการไฟล์ขนาดใหญ่มากๆด้วยการ Streaming data access patterns
+
+- มี NameNode/DataNode ซึ่งก็ไม่รู้ความหมายคืออะไรกันแน่ 55555
+
+- HDFS จะแบ่งข้อมูลขนาดใหญ่ออกเป็น blocks ให้มีขนาดเท่าๆกัน ซึ่งขึ้นอยู่กับการ config ของเราอีกที
+
+## เราจะใช้อันไหนดีล่ะเนี่ย ? 
+- **HDFS**
+  - เมื่อเราต้องการเพิ่ม dataset เท่านั้น (ไม่มีการเขียนแบบสุ่ม)
+  - เมื่อต้องการอ่านทั้งหมดของ dataset (ไม่มีการอ่านแบบสุ่ม)
+- HBase
+  - เมื่อต้องการอ่านหรือเขียนหรือทั้งสองอย่างแบบสุ่ม
+  - เมื่อมีการทำงานด้วยคำสั่งระดับพันคำสั่งต่อวินาทีบนข้อมูลขนาดเทระไบต์
+- RDBMS
+  - เมื่อข้อมูลถูกบรรจุอยู่ใน Node เดียว
+  - เมื่อต้องการฟีเจอร์ของการทำ Transaction แบบเต็มรูปแบบ
+  - เมื่อต้องการการ query แบบ real-time
+
+  ## Oozie คืออะไร ?
+
+  **Oozie** คือตัวจัดการ workflow สำหรับจัดการแต่ละ jobs ของ hadoop เอาไว้สั่งรัน pig perg ห่าเหว อะไรต่อมิอะไร หรือจะรันอันนี้ก่อน แล้วค่อยมารันอันนี้ มันคือ Scheduler
