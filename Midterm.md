@@ -115,3 +115,14 @@ Spark นั้นทำงานบน Hadoop clusters ซึ่งทำงา
   ## Oozie คืออะไร ?
 
   **Oozie** คือตัวจัดการ workflow สำหรับจัดการแต่ละ jobs ของ hadoop เอาไว้สั่งรัน pig perg ห่าเหว อะไรต่อมิอะไร หรือจะรันอันนี้ก่อน แล้วค่อยมารันอันนี้ มันคือ Scheduler
+
+  ## คำสั่งสำหรับรัน Cloudera บน Docker
+
+  ``` Bash
+  sudo docker run --hostname=quickstart.cloudera --privileged=true -t -i -p 8888:8888 cloudera/quickstart /usr/bin/docker-quickstart
+  ```
+
+  ## ค่ำสั่ง SerDe อะไรซักอย่าง กูก๊อปมาใส่ก่อน 5555
+  ``` SQL
+  CREATE EXTERNAL TABLE weblogTest(host STRING, time STRING, method STRING, object STRING, size STRING )ROW FORMAT SERDE 'org.apache.hadoop.hive.contrib.serde2.RegexSerDe' WITH SERDEPROPERTIES ("input.regex" = "([^\\s]+) - - \\[(.+)\\] \"([^\\s]+) (/[^\\s]*) HTTP/[^\\s]+\" [^\\s]+ ([0-9]+)") STORED AS TextFile LOCATION "/user/cloudera/weblog"
+  ```
