@@ -1,4 +1,4 @@
-# Big Data IT@KMITL Resource & Summarization
+# Big Data IT@KMITL Resources & Summarization
 
 ## Slides
 - [Module2_Big Data Processing](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/Module2_Big%20Data%20Processing.ppt.pdf)
