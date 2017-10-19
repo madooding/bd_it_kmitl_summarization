@@ -1,8 +1,8 @@
 # Install flume-source
 
-1. ### Download `flume-sources-1.0-SNAPSHOT.jar` from this [link](https://www.dropbox.com/s/qvudqfym5givwdg/flume-sources-1.0-SNAPSHOT.jar?dl=0).
+1.  Download `flume-sources-1.0-SNAPSHOT.jar` from this [link](https://www.dropbox.com/s/qvudqfym5givwdg/flume-sources-1.0-SNAPSHOT.jar?dl=0).
 
-2. ### Copy the downloaded `flume-sources-1.0-SNAPSHOT.jar` to the Flume classpath
+2.  Copy the downloaded `flume-sources-1.0-SNAPSHOT.jar` to the Flume classpath
     Copy `flume-sources-1.0-SNAPSHOT.jar` to 
 
     ``` 
@@ -18,7 +18,7 @@
     ```
     if those places don't exist, `sudo mkdir` them.
 
-3. ### Edit (or create) `/root/flume/conf/flume-twitter.conf` file to be like shown below.
+3.  Edit (or create) `/root/flume/conf/flume-twitter.conf` file to be like shown below.
 
     ```
     TwitterAgent.sources = Twitter
@@ -51,11 +51,11 @@
 
 # Install hive json serde
 
-1. ### Download json-serde from this [link](http://www.congiu.net/hive-json-serde/1.3.8/cdh5/json-serde-1.3.8-jar-with-dependencies.jar).
+1.  Download json-serde from this [link](http://www.congiu.net/hive-json-serde/1.3.8/cdh5/json-serde-1.3.8-jar-with-dependencies.jar).
 
-2. ### And copy it to `/usr/lib/hive/lib/` or use `ADD JAR` in Hive.
+2.  And copy it to `/usr/lib/hive/lib/` or use `ADD JAR` in Hive.
 
-3. ### Then, run `hive` and enter this command to create a table from data which created by flume.
+3.  Then, run `hive` and enter this command to create a table from data which created by flume.
 
     ```
     CREATE EXTERNAL TABLE tweets (
