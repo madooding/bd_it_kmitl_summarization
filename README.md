@@ -16,5 +16,7 @@
 ## Summarization
 - [Midterm](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/Midterm.md)
 
+- [Final](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/Final.md) (Uncompleted)
+
 ## Homework
 - [TwitterMining - Flume](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/TwitterMining.md)
