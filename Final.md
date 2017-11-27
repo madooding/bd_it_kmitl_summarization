@@ -65,6 +65,35 @@ __Spark__ เป็น Open-source software สำหรับประมวล
 - Amazon S3
 - Mesos
 
+
+## SparkSQL
+
+- __Spark SQL__ คือ module นึงใน Spark สำหรับประมวลผลข้อมูลแบบมีโตรงสร้าง
+- __Spark SQL__ รองรับการเขียน SQL ทั้งแบบ ธรรมดาและแบบ HiveQL
+
+## DataFrame
+
+- คือชุดของข้อมูลที่ immutable (แก้ไขไม่ได้) ซึ่งมีรูปแบบเหมือนตารางใน Relational Database
+
 ## Jupyter !!!
 
 มันคือสิ่งที่ทำให้เกิด interaction กับการเขียน python ได้ เขียนปุ๊ป แสดงผลลัพธ์ปั๊ป อารมณ์ pyshell
+
+## ต่อไปมาเรื่อง Google Cloud
+
+อะไรที่มีใน Hadoop เนี่ย Gcloud ก็มีเหมือนกัน เช่น
+
+| &nbsp; | Hadoop | Google Cloud |
+|------|--------|--------------|
+| **Ingestion** |  Sqoop | |
+|  | Flume  |  DataFlow |
+|  | KafKa  | Pub/Sub  |
+| **Storage**   | HDFS  | Google Storage |
+|  | HBase/NoSQL  |  Big Table  |
+|  | RDBMS  | Cloud SQL  |
+| **Data warehouse** | Teradata etc. |  |
+| **Big Data Processing**  | Hadoop/Spark | DataProc  |
+|  | Jupyter | DataLab  |
+|  |  Hive | Big Query |
+| **Machine Learning** | Spark MLlib | ML Engine |
+| **Data Visiualization** | Tableau etc. | Data Studio |
