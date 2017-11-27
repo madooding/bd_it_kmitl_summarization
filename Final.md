@@ -97,3 +97,5 @@ __Spark__ เป็น Open-source software สำหรับประมวล
 |  |  Hive | Big Query |
 | **Machine Learning** | Spark MLlib | ML Engine |
 | **Data Visiualization** | Tableau etc. | Data Studio |
+
+

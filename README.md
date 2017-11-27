@@ -8,6 +8,13 @@
   - [Module4_2_MapReduce_Oozie](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/Module4_2_MapReduce_Oozie.ppt.pdf)
 - [Module5_Understainding Hive](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/Module5_Understanding%20Hive.ppt.pdf)
 - [Module6_Understanding Pig_Impala](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/Module6_Understanding%20Pig_Impala.ppt.pdf)
+- [Module7_Understanding Sqoop]()
+- [Module8_Understanding Flume]()
+- [Module9_Understanding Kafka]()
+- [Module10_Intro2Spark]()
+- [Module11_SparkSQL and Spark Streaming]()
+- [Module12_Big Data as a Service using Google Cloud]()
+
 
 ## Resources
 - [คำสั่ง HBase](https://github.com/madooding/bd_it_kmitl_summarization/blob/master/resources/HBaseCommands.pdf)
